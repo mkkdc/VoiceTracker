@@ -1,0 +1,12 @@
+D:\projects\ViewTrackerService\VoiceTracker\bin\Debug\VoiceTracker.exe.config
+D:\projects\ViewTrackerService\VoiceTracker\bin\Debug\VoiceTracker.exe
+D:\projects\ViewTrackerService\VoiceTracker\bin\Debug\VoiceTracker.pdb
+D:\projects\ViewTrackerService\VoiceTracker\bin\Debug\NAudio.dll
+D:\projects\ViewTrackerService\VoiceTracker\bin\Debug\NAudio.xml
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.ProjectInstaller.resources
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.VoiceTracker.resources
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.csproj.GenerateResource.cache
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.csproj.CoreCompileInputs.cache
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.csproj.CopyComplete
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.exe
+D:\projects\ViewTrackerService\VoiceTracker\obj\Debug\VoiceTracker.pdb
