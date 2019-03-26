@@ -3,97 +3,105 @@ using System.ServiceProcess;
 using System.Threading.Tasks;
 using System.IO;
 using NAudio.Wave;
-
+using NAudio.Lame;
+using System.Speech.Synthesis;
 
 namespace VoiceTracker
 {
-    public partial class VoiceTracker : ServiceBase
-    {
-        private string message;
-        private StreamWriter file;
-        VoicerTracker application;
+    public partial class VoiceTracker : ServiceBase{ // service class
+        private string message; // initial message
+        private StreamWriter file; // error log file
+        private VoicerTracker application; // main record class
+        private SpeechSynthesizer speech = new SpeechSynthesizer(); //synthesizer
         public VoiceTracker(){
             InitializeComponent();
         }
-        protected override void OnStart(string[] args){
+        protected override void OnStart(string[] args){ // start function
             try{
                 this.application = new VoicerTracker();
                 eventLog1.WriteEntry("initial: service VoiceTracker is running...");
                 message = application.startProject();
                 eventLog1.WriteEntry(message);
             }
-            catch (Exception error){
+            catch (Exception error){ // ecxception error block 
                 eventLog1.WriteEntry(error.Message);
                 this.file = new StreamWriter(new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\errorLog.txt", System.IO.FileMode.Append));
                 this.file.WriteLine(DateTime.Now + " - " + error.Message);
                 this.file.Flush();
                 this.file.Close();
+                this.speech.Speak("Внимание произошла ошибка аудиозаписи,ошибка аудиозаписи.");
                 this.Stop();
             }
         }
-        protected override void OnStop(){
+        protected override void OnStop(){ //stop function
             eventLog1.WriteEntry("initial: service VoiceTracker is stopped...");
             this.application.waveSource.StopRecording();
-            this.application.waveFile.Dispose();
+            VoicerTracker.lameWriter.Dispose();
         }
     }
 
-    class VoicerTracker
-    {
-        private bool flag = false;
-        private DriveInfo[] drives;
-        private DirectoryInfo dirInfo = new DirectoryInfo("D:\\VoiceTracker");
-        public WaveFileWriter waveFile;
-        public WaveInEvent waveSource = new WaveInEvent();
-        private DateTime dateStart = DateTime.Now;
-        private DateTime dateEnd = DateTime.Now.Date.AddDays(1);
-        private string tempFile;
-        private string message;
-        private int delay;
-        private StreamWriter file;
+    class VoicerTracker{
+        private bool flag = false; // driving flag
+        private DriveInfo[] drives; // drives array
+        private DirectoryInfo dirInfo; // directory info
+        public WaveInEvent waveSource = new WaveInEvent(); // record stream
+        public static LameMP3FileWriter lameWriter; // file writer
+        private static bool stopped = false; // write 
+        private DateTime dateStart = DateTime.Now; // date time start
+        private DateTime dateEnd = DateTime.Now.Date.AddDays(1); // date time end
+        private string tempFile; // file of recording 
+        private string message;  // message return
+        private int delay; // delay
+        private StreamWriter file; // stream for error log file
+        private SpeechSynthesizer speech = new SpeechSynthesizer();  // synthesizer
+        private DriveInfo tempDrive; // temp drive
+     
+        public VoicerTracker(){} //constructor
 
-        public VoicerTracker(){}
-
-        public string startProject(){
+        public string startProject(){  // main start function
             this.diskCheck();
             this.microphoneCheck();
             this.recording();
             return this.message;
         }
 
-        private void diskCheck(){
+        private void diskCheck(){ // available space and drive cheacking function
             this.message += "initial: initialization of local volumes:\r\n";
             this.drives = DriveInfo.GetDrives();
-   
-            foreach (DriveInfo drive in drives){
+
+            foreach (DriveInfo drive in drives) {
                 this.message += $"disk name: {drive.Name}\r\n";
                 this.message += $"disk type: {drive.DriveType}\r\n\r\n";
-                if (drive.Name[0] == 'D' && System.Convert.ToString(drive.DriveType) == "Fixed"){
-                    flag = true;
-                    if (drive.AvailableFreeSpace < 1000000000)
-                        throw new Exception("error: insufficient free disk space.");
+                if ((drive.Name[0] == 'C' || drive.Name[0] == 'D') && System.Convert.ToString(drive.DriveType) == "Fixed"){
+                    this.flag = true;
+                    this.tempDrive = drive;
                 }
             }
 
             switch (flag){
                 case true:
                     this.message += "logical volume for recording discs detected.\r\n";
+                    this.dirInfo = new DirectoryInfo(this.tempDrive.Name[0]+":\\VoiceTracker");
                     if (!this.dirInfo.Exists)
                         this.dirInfo.Create();
                     break;
                 case false:
                     throw new Exception("error: local write volume was found.");
             }
+
+            if (this.tempDrive.AvailableFreeSpace < 1000000000)
+                throw new Exception("error: insufficient free disk space.");
+
         }
 
-        private void microphoneCheck(){
+        private void microphoneCheck(){ //microphone check function
             if (WaveIn.DeviceCount < 1)
                 throw new Exception("error: microphone was not detected");
             else
                 this.message += "initial: microphone detected\r\n";
         }
 
-        private void recording(){
+        private void recording(){ //record function
             if (System.Convert.ToInt32(dateStart.ToString("mm")) <= 30)
                 this.delay = (29 - System.Convert.ToInt32(this.dateStart.ToString("mm"))) * 60 + (60 - System.Convert.ToInt32(this.dateStart.ToString("ss")));
             else
@@ -101,35 +109,47 @@ namespace VoiceTracker
 
             this.message += "initial: voicemail recording started...\r\n";
 
-            this.waveSource.DeviceNumber = 0;
-            this.waveSource.WaveFormat = new WaveFormat(8000, 1);
-            this.waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(this.waveSource_DataAvailable);
-            this.dirInfo = new DirectoryInfo(@"D:\VoiceTracker\" + this.dateStart.ToShortDateString());
+            this.waveSource = new WaveInEvent();
+            this.waveSource.WaveFormat = new WaveFormat(44100,1); //hz,kbps,channels of record
+            this.waveSource.DataAvailable += waveIn_DataAvailable;
+            this.waveSource.RecordingStopped += waveIn_RecordingStopped;
+           
+            this.dirInfo = new DirectoryInfo(this.tempDrive.Name[0]+@":\VoiceTracker\" + this.dateStart.ToShortDateString());
             if (!this.dirInfo.Exists)
                 this.dirInfo.Create();
 
-            this.tempFile = (@"D:\VoiceTracker\" + this.dateStart.ToShortDateString() + @"\" + this.dateStart.ToShortDateString() + "-" + this.dateStart.ToString("HH.mm.ss") + @".wav");
-            this.waveFile = new WaveFileWriter(tempFile, waveSource.WaveFormat);
+            this.tempFile = (this.tempDrive.Name[0] + @":\VoiceTracker\" + this.dateStart.ToShortDateString() + @"\" + this.dateStart.ToShortDateString() + "-" + this.dateStart.ToString("HH.mm.ss") + @".mp3");
+            lameWriter = new LameMP3FileWriter(this.tempFile, this.waveSource.WaveFormat,32);
+
             this.waveSource.StartRecording();
+            stopped = false;
 
-            SetInterval(() => cicleRecording(), TimeSpan.FromSeconds(5)); //this.delay
+            SetInterval(() => cicleRecording(), TimeSpan.FromSeconds(this.delay)); //this.delay
         }
 
-        private void waveSource_DataAvailable(object sender, WaveInEventArgs e){
-            waveFile.WriteData(e.Buffer, 0, e.BytesRecorded);
-        }
-
-        public static async Task SetInterval(Action action, TimeSpan timeout){
+        public static async Task SetInterval(Action action, TimeSpan timeout){ //cicle function
             await Task.Delay(timeout).ConfigureAwait(false);
             action();
-            SetInterval(action, TimeSpan.FromSeconds(5));//1800
-
+            SetInterval(action, TimeSpan.FromSeconds(1800));//cicle delay 1800
         }
 
-        private void cicleRecording(){
+        static void waveIn_DataAvailable(object sender, WaveInEventArgs e){ //support function
+            if (lameWriter != null)
+                lameWriter.Write(e.Buffer, 0, e.BytesRecorded);
+        }
+
+        static void waveIn_RecordingStopped(object sender, StoppedEventArgs e){ //support function
+            stopped = true;
+        }
+
+        private void cicleRecording(){ // record cicle function
             this.waveSource.StopRecording();
-            this.waveFile.Dispose();
+            lameWriter.Flush();
+            this.waveSource.Dispose();
+            lameWriter.Dispose();
+
             this.fastCheck();
+
             this.dateStart = DateTime.Now;
             
             if (this.dateStart > this.dateEnd){
@@ -137,30 +157,34 @@ namespace VoiceTracker
             }
 
             this.waveSource = new WaveInEvent();
-            this.waveSource.DeviceNumber = 0;
-            this.waveSource.WaveFormat = new WaveFormat(8000, 1);
-            this.waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
-            this.dirInfo = new DirectoryInfo(@"D:\VoiceTracker\" + dateStart.ToShortDateString());
+            this.waveSource.WaveFormat = new WaveFormat(44100,1); //hz,kbps,chanels of record
+            this.waveSource.DataAvailable += waveIn_DataAvailable;
+            this.waveSource.RecordingStopped += waveIn_RecordingStopped;
+
+            this.dirInfo = new DirectoryInfo(this.tempDrive.Name[0] + @":\VoiceTracker\" + dateStart.ToShortDateString());
             if (!this.dirInfo.Exists)
                 this.dirInfo.Create();
-            this.tempFile = (@"D:\VoiceTracker\" + dateStart.ToShortDateString() + @"\" + dateStart.ToShortDateString() + "-" + dateStart.ToString("HH.mm.ss") + @".wav");
-            Console.WriteLine(@"D:\VoiceTracker\" + dateStart.ToShortDateString() + @"\" + dateStart.ToShortDateString() + "-" + dateStart.ToString("HH.mm.ss") + @".wav");
-            this.waveFile = new WaveFileWriter(tempFile, waveSource.WaveFormat);
+            this.tempFile = (this.tempDrive.Name[0] + @":\VoiceTracker\" + dateStart.ToShortDateString() + @"\" + dateStart.ToShortDateString() + "-" + dateStart.ToString("HH.mm.ss") + @".mp3");
+
+            lameWriter = new LameMP3FileWriter(this.tempFile, this.waveSource.WaveFormat,32);
+
             this.waveSource.StartRecording();
         }
 
-        private void fastCheck(){
+        private void fastCheck(){ //fast check function
             this.drives = DriveInfo.GetDrives();
             foreach (DriveInfo drive in drives){
-                if (drive.Name[0] == 'D' && System.Convert.ToString(drive.DriveType) == "Fixed"){
+                if (drive.Name[0] == this.tempDrive.Name[0]  && System.Convert.ToString(drive.DriveType) == "Fixed"){
                     flag = true;
                     if (drive.AvailableFreeSpace < 500000000){
                         this.terminte("error: fastCheck failed - not enought space.");
                     }
                 }
             }
+
             switch (flag){
                 case true:
+                    this.dirInfo = new DirectoryInfo(this.tempDrive.Name[0] + ":\\VoiceTracker");
                     if (!this.dirInfo.Exists)
                         this.dirInfo.Create();
                     break;
@@ -175,11 +199,12 @@ namespace VoiceTracker
             }
         }
 
-        private void terminte(string message){
+        private void terminte(string message){ //terminate function
             this.file = new StreamWriter(new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\errorLog.txt", System.IO.FileMode.Append));
             this.file.WriteLine(DateTime.Now + " - " + message);
             this.file.Flush();
             this.file.Close();
+            this.speech.Speak("Внимание произошла ошибка аудиозаписи,ошибка аудиозаписи.");
             Environment.Exit(1);
         }
     }

@@ -15,26 +15,62 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_05E657CBF4D7416D80BBA901BE4417A6"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_129284458A3142DBA463462EAE26B80A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E9F0C550504AE9C300618532937D476D"
+        "MsmKey" = "8:_45030C43471E42678432B36AE2D8CDC6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_47FE8E6BD764DEE8EB37FF15BEFE73D5"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6532B1BFBBF832A809ABBF089CAEE6DE"
         "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E9F0C550504AE9C300618532937D476D"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "OwnerKey" = "8:_6532B1BFBBF832A809ABBF089CAEE6DE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_05E657CBF4D7416D80BBA901BE4417A6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_47FE8E6BD764DEE8EB37FF15BEFE73D5"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +91,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -71,6 +123,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -156,20 +224,122 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E9F0C550504AE9C300618532937D476D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_05E657CBF4D7416D80BBA901BE4417A6"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+            "AssemblyAsmDisplayName" = "8:NAudio, Version=1.8.5.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E9F0C550504AE9C300618532937D476D"
+                    "_05E657CBF4D7416D80BBA901BE4417A6"
+                    {
+                    "Name" = "8:NAudio.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NAudio.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_129284458A3142DBA463462EAE26B80A"
+            {
+            "SourcePath" = "8:..\\VoiceTracker\\bin\\Debug\\libmp3lame.64.dll"
+            "TargetName" = "8:libmp3lame.64.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_45030C43471E42678432B36AE2D8CDC6"
+            {
+            "SourcePath" = "8:..\\VoiceTracker\\bin\\Debug\\libmp3lame.32.dll"
+            "TargetName" = "8:libmp3lame.32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_47FE8E6BD764DEE8EB37FF15BEFE73D5"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_47FE8E6BD764DEE8EB37FF15BEFE73D5"
                     {
                     "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6532B1BFBBF832A809ABBF089CAEE6DE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NAudio.Lame, Version=1.0.9.26885, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6532B1BFBBF832A809ABBF089CAEE6DE"
+                    {
+                    "Name" = "8:NAudio.Lame.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NAudio.Lame.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
@@ -244,7 +414,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WindowsInstaller"
         "ProductCode" = "8:{E3DE7013-25C5-47D4-82E0-7876536A5A3F}"
-        "PackageCode" = "8:{E0D61D36-9505-4B36-A3A2-0E458ECFED3D}"
+        "PackageCode" = "8:{BAD0CF36-0B9A-480A-9B43-CE5C6DBF7CC0}"
         "UpgradeCode" = "8:{BB24C729-B17F-489B-8178-977ADF5B0594}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
