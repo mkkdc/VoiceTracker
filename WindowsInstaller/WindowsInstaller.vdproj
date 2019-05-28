@@ -15,98 +15,98 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_05E657CBF4D7416D80BBA901BE4417A6"
-        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0A544A55A550F45BC57F0877791B406A"
-        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0A544A55A550F45BC57F0877791B406A"
-        "OwnerKey" = "8:_A5440C94EC066BE2922CAA473415B037"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_129284458A3142DBA463462EAE26B80A"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_45030C43471E42678432B36AE2D8CDC6"
+        "MsmKey" = "8:_498D6D4C64EC4834C3F8D3D1703D0BC2"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_559153E53A161BBA0D59FCF31AC36CD3"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_559153E53A161BBA0D59FCF31AC36CD3"
+        "OwnerKey" = "8:_752486B1E9DF5DA08609950FCD52AC1F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_559153E53A161BBA0D59FCF31AC36CD3"
+        "OwnerKey" = "8:_CA31F0E0F36E04DBCAF16AE2B56A135F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_561287BD4521D95BDFD7B5C2EA51BDFE"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_752486B1E9DF5DA08609950FCD52AC1F"
+        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A853130F8BEC4DF886E47CD6FF93DC00"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6532B1BFBBF832A809ABBF089CAEE6DE"
+        "MsmKey" = "8:_B9921E5FB23784AFF6FF521BF2A1875C"
         "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_93C53CFB480824D2EB9C2AA555EF179A"
+        "MsmKey" = "8:_B9921E5FB23784AFF6FF521BF2A1875C"
+        "OwnerKey" = "8:_752486B1E9DF5DA08609950FCD52AC1F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B9921E5FB23784AFF6FF521BF2A1875C"
+        "OwnerKey" = "8:_CA31F0E0F36E04DBCAF16AE2B56A135F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CA31F0E0F36E04DBCAF16AE2B56A135F"
         "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_93C53CFB480824D2EB9C2AA555EF179A"
-        "OwnerKey" = "8:_A5440C94EC066BE2922CAA473415B037"
+        "MsmKey" = "8:_CA31F0E0F36E04DBCAF16AE2B56A135F"
+        "OwnerKey" = "8:_752486B1E9DF5DA08609950FCD52AC1F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_93C53CFB480824D2EB9C2AA555EF179A"
-        "OwnerKey" = "8:_0A544A55A550F45BC57F0877791B406A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A5440C94EC066BE2922CAA473415B037"
+        "MsmKey" = "8:_D2F7D830C4E5C302FC8E52A7F1B729D4"
         "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B00C276C0A259EEF8F05ABE219F8F58B"
+        "MsmKey" = "8:_E3FFCC78EA0025C0F15A45006C6B81EC"
         "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B00C276C0A259EEF8F05ABE219F8F58B"
-        "OwnerKey" = "8:_A5440C94EC066BE2922CAA473415B037"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B00C276C0A259EEF8F05ABE219F8F58B"
-        "OwnerKey" = "8:_0A544A55A550F45BC57F0877791B406A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BC82CBCE4923BA1B2DD92F1F48E80812"
-        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E7E1F6BEEA24F14CED5D770C95D21D37"
-        "OwnerKey" = "8:_4161A9B037174A34B15A463C27E380F9"
+        "MsmKey" = "8:_F98ECF68297F4DAA9C104A6CD831DDBE"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -118,49 +118,49 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6532B1BFBBF832A809ABBF089CAEE6DE"
+        "OwnerKey" = "8:_D2F7D830C4E5C302FC8E52A7F1B729D4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_05E657CBF4D7416D80BBA901BE4417A6"
+        "OwnerKey" = "8:_498D6D4C64EC4834C3F8D3D1703D0BC2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A5440C94EC066BE2922CAA473415B037"
+        "OwnerKey" = "8:_752486B1E9DF5DA08609950FCD52AC1F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E7E1F6BEEA24F14CED5D770C95D21D37"
+        "OwnerKey" = "8:_561287BD4521D95BDFD7B5C2EA51BDFE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0A544A55A550F45BC57F0877791B406A"
+        "OwnerKey" = "8:_CA31F0E0F36E04DBCAF16AE2B56A135F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_93C53CFB480824D2EB9C2AA555EF179A"
+        "OwnerKey" = "8:_559153E53A161BBA0D59FCF31AC36CD3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B00C276C0A259EEF8F05ABE219F8F58B"
+        "OwnerKey" = "8:_B9921E5FB23784AFF6FF521BF2A1875C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BC82CBCE4923BA1B2DD92F1F48E80812"
+        "OwnerKey" = "8:_E3FFCC78EA0025C0F15A45006C6B81EC"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -301,7 +301,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.0"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.0,Profile=Client"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=671728"
                 }
@@ -309,14 +309,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_05E657CBF4D7416D80BBA901BE4417A6"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_498D6D4C64EC4834C3F8D3D1703D0BC2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NAudio, Version=1.8.5.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_05E657CBF4D7416D80BBA901BE4417A6"
+                    "_498D6D4C64EC4834C3F8D3D1703D0BC2"
                     {
                     "Name" = "8:NAudio.dll"
                     "Attributes" = "3:512"
@@ -340,116 +340,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0A544A55A550F45BC57F0877791B406A"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_559153E53A161BBA0D59FCF31AC36CD3"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0A544A55A550F45BC57F0877791B406A"
-                    {
-                    "Name" = "8:Microsoft.Threading.Tasks.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.Threading.Tasks.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_129284458A3142DBA463462EAE26B80A"
-            {
-            "SourcePath" = "8:..\\VoiceTracker\\bin\\Debug\\libmp3lame.64.dll"
-            "TargetName" = "8:libmp3lame.64.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_45030C43471E42678432B36AE2D8CDC6"
-            {
-            "SourcePath" = "8:..\\VoiceTracker\\bin\\Debug\\libmp3lame.32.dll"
-            "TargetName" = "8:libmp3lame.32.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6532B1BFBBF832A809ABBF089CAEE6DE"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NAudio.Lame, Version=1.0.9.26885, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_6532B1BFBBF832A809ABBF089CAEE6DE"
-                    {
-                    "Name" = "8:NAudio.Lame.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:NAudio.Lame.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_93C53CFB480824D2EB9C2AA555EF179A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Threading.Tasks, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_93C53CFB480824D2EB9C2AA555EF179A"
+                    "_559153E53A161BBA0D59FCF31AC36CD3"
                     {
                     "Name" = "8:System.Threading.Tasks.dll"
                     "Attributes" = "3:512"
@@ -473,14 +371,45 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A5440C94EC066BE2922CAA473415B037"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_561287BD4521D95BDFD7B5C2EA51BDFE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_561287BD4521D95BDFD7B5C2EA51BDFE"
+                    {
+                    "Name" = "8:Microsoft.Threading.Tasks.Extensions.Desktop.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Threading.Tasks.Extensions.Desktop.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_752486B1E9DF5DA08609950FCD52AC1F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A5440C94EC066BE2922CAA473415B037"
+                    "_752486B1E9DF5DA08609950FCD52AC1F"
                     {
                     "Name" = "8:Microsoft.Threading.Tasks.Extensions.dll"
                     "Attributes" = "3:512"
@@ -504,14 +433,34 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B00C276C0A259EEF8F05ABE219F8F58B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A853130F8BEC4DF886E47CD6FF93DC00"
+            {
+            "SourcePath" = "8:..\\VoiceTracker\\packages\\NAudio.Lame.1.0.9\\build\\libmp3lame.32.dll"
+            "TargetName" = "8:libmp3lame.32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B9921E5FB23784AFF6FF521BF2A1875C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Runtime, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B00C276C0A259EEF8F05ABE219F8F58B"
+                    "_B9921E5FB23784AFF6FF521BF2A1875C"
                     {
                     "Name" = "8:System.Runtime.dll"
                     "Attributes" = "3:512"
@@ -535,14 +484,76 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BC82CBCE4923BA1B2DD92F1F48E80812"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CA31F0E0F36E04DBCAF16AE2B56A135F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.IO, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BC82CBCE4923BA1B2DD92F1F48E80812"
+                    "_CA31F0E0F36E04DBCAF16AE2B56A135F"
+                    {
+                    "Name" = "8:Microsoft.Threading.Tasks.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Threading.Tasks.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D2F7D830C4E5C302FC8E52A7F1B729D4"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NAudio.Lame, Version=1.0.9.26885, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D2F7D830C4E5C302FC8E52A7F1B729D4"
+                    {
+                    "Name" = "8:NAudio.Lame.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NAudio.Lame.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E3FFCC78EA0025C0F15A45006C6B81EC"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E3FFCC78EA0025C0F15A45006C6B81EC"
                     {
                     "Name" = "8:System.IO.dll"
                     "Attributes" = "3:512"
@@ -566,21 +577,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E7E1F6BEEA24F14CED5D770C95D21D37"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F98ECF68297F4DAA9C104A6CD831DDBE"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_E7E1F6BEEA24F14CED5D770C95D21D37"
-                    {
-                    "Name" = "8:Microsoft.Threading.Tasks.Extensions.Desktop.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.Threading.Tasks.Extensions.Desktop.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\VoiceTracker\\packages\\NAudio.Lame.1.0.9\\build\\libmp3lame.64.dll"
+            "TargetName" = "8:libmp3lame.64.dll"
             "Tag" = "8:"
             "Folder" = "8:_5C8B99AAA34B4454A6B109E9ABEFEBA2"
             "Condition" = "8:"
@@ -594,7 +594,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -654,7 +654,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:WindowsInstaller"
         "ProductCode" = "8:{E3DE7013-25C5-47D4-82E0-7876536A5A3F}"
-        "PackageCode" = "8:{AE77B223-FED9-4339-9D4D-4C3AAC336E7C}"
+        "PackageCode" = "8:{44A53F85-D16C-4828-9602-6F2205568FA4}"
         "UpgradeCode" = "8:{BB24C729-B17F-489B-8178-977ADF5B0594}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
